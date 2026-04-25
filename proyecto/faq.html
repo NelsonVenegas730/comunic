@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ILAC - Instituto Latinoamericano de Computación. Carreras técnicas y cursos de computación 100% virtuales en Costa Rica. Diseño Gráfico, Programación, Operador de Computadoras y más.">
+    <meta name="keywords"
+        content="ILAC, instituto computación, carreras técnicas, cursos virtuales, Costa Rica, diseño gráfico, programación, Excel, computación">
+    <meta name="author" content="ILAC - Instituto Latinoamericano de Computación">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="ILAC - Instituto Latinoamericano de Computación">
+    <meta property="og:description"
+        content="Aprende de forma virtual con nuestras carreras técnicas y cursos libres de computación en Costa Rica.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ilacvirtual.com">
+    <title>ILAC | Instituto Latinoamericano de Computación</title>
+    <link rel="icon" href="imagenes/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+
+    <a class="skip-link" href="index.html">Saltar al contenido principal</a>
+    <nav class="navbar navbar-main navbar-expand-lg" role="navigation" aria-label="Navegación principal">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" aria-label="Ir a inicio ILAC">
+                <span>&#9673; ILAC</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+                aria-controls="navMain" aria-expanded="false" aria-label="Menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav ms-auto gap-1">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Conocé ILAC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carreras.html">Carreras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link btn-matricular-nav" href="matricula.html">
+                            <i class="bi bi-pencil-square me-1"></i>Matricular
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="page" id="page-faq" aria-labelledby="titulo-faq">
+        <div class="breadcrumb-bar">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><button onclick="cargarPagina('inicio')"
+                                style="background:none;border:none;padding:0;cursor:pointer;"><a>Inicio</a></button>
+                        </li>
+                        <li class="breadcrumb-item active">Preguntas Frecuentes</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="sec">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge-sec">Ayuda</span>
+                    <h2 id="titulo-faq" class="sec-title">Preguntas Frecuentes</h2>
+                    <p class="sec-sub">Respuestas a las dudas más comunes de nuestros estudiantes y futuros
+                        matriculados.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="accordion" id="faqAcc">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#f1" aria-expanded="true">¿Los cursos
+                                        de ILAC son completamente virtuales?</button></h3>
+                                <div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc">
+                                    <div class="accordion-body">Sí, todos los cursos y carreras técnicas de ILAC se
+                                        imparten en modalidad 100% virtual. Accedes a través de nuestra plataforma de
+                                        aula virtual desde cualquier dispositivo con conexión a internet: computadora,
+                                        tablet o teléfono inteligente.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#f2">¿Cuáles son los requisitos para
+                                        matricularme?</button></h3>
+                                <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                                    <div class="accordion-body">Para la mayoría de cursos libres solo necesitas una
+                                        conexión a internet y disposición para aprender. Para las carreras técnicas se
+                                        requiere haber completado la educación secundaria o su equivalente.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#f3">¿Cuánto tiempo debo dedicar por
+                                        semana al estudio?</button></h3>
+                                <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                                    <div class="accordion-body">Depende del programa. Los cursos libres requieren
+                                        aproximadamente 3 a 5 horas semanales, mientras que las carreras técnicas
+                                        demandan entre 8 y 15 horas semanales. La plataforma es flexible y puedes
+                                        organizar tus horas como mejor se adapte a tu horario.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#f4">¿Los certificados de ILAC son
+                                        reconocidos en el mercado laboral?</button></h3>
+                                <div id="f4" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                                    <div class="accordion-body">Sí. Los certificados y títulos técnicos de ILAC tienen
+                                        reconocimiento en el mercado laboral costarricense y latinoamericano. Muchas
+                                        empresas del sector tecnológico, administrativo y creativo de Costa Rica
+                                        contratan activamente egresados de ILAC.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#f5">¿Cómo son las clases? ¿Son en
+                                        vivo o grabadas?</button></h3>
+                                <div id="f5" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                                    <div class="accordion-body">Ofrecemos ambas modalidades. Tenemos sesiones en vivo
+                                        con el docente para interactuar en tiempo real. Además, todas las sesiones
+                                        quedan grabadas en el aula virtual para que puedas verlas cuando quieras,
+                                        cuantas veces necesites.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#f6">¿Cuáles son las opciones de pago
+                                        disponibles?</button></h3>
+                                <div id="f6" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                                    <div class="accordion-body">Aceptamos pago por SINPE Móvil, transferencia bancaria,
+                                        tarjeta de crédito o débito, y depósito en efectivo en nuestras oficinas. Para
+                                        carreras técnicas también ofrecemos opciones de financiamiento en cuotas
+                                        mensuales sin intereses.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#f7">¿Qué pasa si pierdo una clase en
+                                        vivo?</button></h3>
+                                <div id="f7" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                                    <div class="accordion-body">No te preocupes. Todas las sesiones quedan grabadas y
+                                        disponibles en tu aula virtual dentro de las 24 horas siguientes.
+                                        Adicionalmente, tienes acceso a foros de consulta donde puedes plantear tus
+                                        dudas al docente en cualquier momento.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#f8">¿Puedo estudiar desde cualquier
+                                        país de Latinoamérica?</button></h3>
+                                <div id="f8" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                                    <div class="accordion-body">Absolutamente. Contamos con estudiantes activos en más
+                                        de 10 países de América Latina, incluyendo Costa Rica, México, Guatemala, El
+                                        Salvador, Honduras, Nicaragua, Panamá, Colombia, Ecuador y más.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <p style="color:#666; font-size:.95rem;">¿Tienes alguna otra pregunta? <button
+                                    onclick="cargarPagina('contacto')" class="btn-azul ms-2"
+                                    style="padding:.45rem 1.2rem; font-size:.88rem;">Contáctanos</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer role="contentinfo" class="footer-ilac">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="footer-logo mb-2"><span>&#9673; ILAC</span></div>
+                    <p class="footer-text">
+                        Instituto Latinoamericano de Computación. Educación tecnológica virtual de calidad para toda
+                        Latinoamérica desde Costa Rica.
+                    </p>
+
+                    <div class="footer-social mt-3" aria-label="Redes sociales de ILAC">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <h5>Institución</h5>
+                    <a href="nosotros.html">Conocé ILAC</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <h5>Programas</h5>
+                    <a href="carreras.html">Carreras técnicas</a>
+                    <a href="cursos.html">Cursos libres</a>
+                    <a href="cursos.html">Especializados</a>
+                    <a href="cursos.html">Empresariales</a>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Contáctanos</h5>
+                    <p class="footer-contact"><i class="bi bi-geo-alt me-2"></i>San José, Costa Rica</p>
+                    <p class="footer-contact"><i class="bi bi-telephone me-2"></i>+506 4052-7777</p>
+                    <p class="footer-contact"><i class="bi bi-whatsapp me-2"></i>+506 8477-1777</p>
+                    <p class="footer-contact"><i class="bi bi-envelope me-2"></i>info@ilacvirtual.com</p>
+
+                    <a href="matricula.html" class="btn-naranja footer-btn">
+                        <i class="bi bi-pencil-square me-1"></i>Matricular ahora
+                    </a>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p>
+                    © 2025 ILAC - Instituto Latinoamericano de Computación. Todos los derechos reservados.
+                    | <a href="anuncios.html">Anuncios</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

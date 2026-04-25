@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ILAC - Instituto Latinoamericano de Computación. Carreras técnicas y cursos de computación 100% virtuales en Costa Rica. Diseño Gráfico, Programación, Operador de Computadoras y más.">
+    <meta name="keywords"
+        content="ILAC, instituto computación, carreras técnicas, cursos virtuales, Costa Rica, diseño gráfico, programación, Excel, computación">
+    <meta name="author" content="ILAC - Instituto Latinoamericano de Computación">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="ILAC - Instituto Latinoamericano de Computación">
+    <meta property="og:description"
+        content="Aprende de forma virtual con nuestras carreras técnicas y cursos libres de computación en Costa Rica.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ilacvirtual.com">
+    <title>ILAC | Instituto Latinoamericano de Computación</title>
+    <link rel="icon" href="imagenes/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+
+    <a class="skip-link" href="index.html">Saltar al contenido principal</a>
+    <nav class="navbar navbar-main navbar-expand-lg" role="navigation" aria-label="Navegación principal">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" aria-label="Ir a inicio ILAC">
+                <span>&#9673; ILAC</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+                aria-controls="navMain" aria-expanded="false" aria-label="Menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav ms-auto gap-1">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Conocé ILAC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carreras.html">Carreras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link btn-matricular-nav" href="matricula.html">
+                            <i class="bi bi-pencil-square me-1"></i>Matricular
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- PÁGINA MATRICULA -->
+    <section class="page" id="page-matricula" aria-labelledby="titulo-matricula">
+        <div class="breadcrumb-bar">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><button onclick="cargarPagina('inicio')"
+                                style="background:none;border:none;padding:0;cursor:pointer;"><a>Inicio</a></button>
+                        </li>
+                        <li class="breadcrumb-item active">Matricular</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="sec">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge-sec">¡Empieza hoy!</span>
+                    <h2 id="titulo-matricula" class="sec-title">Formulario de Matrícula</h2>
+                    <p class="sec-sub">Completa el formulario y nuestro equipo se pondrá en contacto contigo en menos de
+                        24 horas.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div
+                            style="background:var(--blanco); border-radius:24px; padding:2.5rem; box-shadow:var(--sombra);">
+                            <form id="formMatricula" novalidate onsubmit="enviarMatricula(event)">
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <h4
+                                            style="font-family:'Sora',sans-serif; color:var(--azul-oscuro); font-size:1.1rem; padding-bottom:.8rem; border-bottom:2px solid var(--azul-light); margin-bottom:.5rem;">
+                                            <i class="bi bi-person-fill me-2" style="color:var(--azul);"></i>Datos
+                                            personales
+                                        </h4>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="mNombre" class="form-label">Nombre <span style="color:red;"
+                                                aria-hidden="true">*</span></label>
+                                        <input type="text" class="form-control" id="mNombre" placeholder="Tu nombre"
+                                            required>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="mApellido" class="form-label">Apellidos <span style="color:red;"
+                                                aria-hidden="true">*</span></label>
+                                        <input type="text" class="form-control" id="mApellido"
+                                            placeholder="Tus apellidos" required>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="mEmail" class="form-label">Correo electrónico <span
+                                                style="color:red;" aria-hidden="true">*</span></label>
+                                        <input type="email" class="form-control" id="mEmail" placeholder="tu@correo.com"
+                                            required>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="mTel" class="form-label">Teléfono <span style="color:red;"
+                                                aria-hidden="true">*</span></label>
+                                        <input type="tel" class="form-control" id="mTel" placeholder="+506 8888-8888"
+                                            required>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="mPais" class="form-label">País de residencia <span
+                                                style="color:red;" aria-hidden="true">*</span></label>
+                                        <select class="form-select" id="mPais" required>
+                                            <option value="">Seleccionar</option>
+                                            <option>Costa Rica</option>
+                                            <option>México</option>
+                                            <option>Guatemala</option>
+                                            <option>El Salvador</option>
+                                            <option>Honduras</option>
+                                            <option>Nicaragua</option>
+                                            <option>Panamá</option>
+                                            <option>Colombia</option>
+                                            <option>Ecuador</option>
+                                            <option>Otro</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="mEdad" class="form-label">Edad</label>
+                                        <input type="number" class="form-control" id="mEdad" min="14" max="99"
+                                            placeholder="Tu edad">
+                                    </div>
+                                    <div class="col-12 mt-2">
+                                        <h4
+                                            style="font-family:'Sora',sans-serif; color:var(--azul-oscuro); font-size:1.1rem; padding-bottom:.8rem; border-bottom:2px solid var(--azul-light); margin-bottom:.5rem;">
+                                            <i class="bi bi-mortarboard-fill me-2"
+                                                style="color:var(--azul);"></i>Programa de interés
+                                        </h4>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="mTipo" class="form-label">Tipo de programa <span style="color:red;"
+                                                aria-hidden="true">*</span></label>
+                                        <select class="form-select" id="mTipo" required onchange="actualizarCursos()">
+                                            <option value="">Seleccionar</option>
+                                            <option value="carrera">Carrera técnica</option>
+                                            <option value="libre">Curso libre</option>
+                                            <option value="especializado">Curso especializado</option>
+                                            <option value="empresarial">Capacitación empresarial</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="mPrograma" class="form-label">Programa <span style="color:red;"
+                                                aria-hidden="true">*</span></label>
+                                        <select class="form-select" id="mPrograma" required>
+                                            <option value="">Primero selecciona tipo</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="mComentarios" class="form-label">Comentarios adicionales</label>
+                                        <textarea class="form-control" id="mComentarios" rows="3"
+                                            placeholder="¿Tienes alguna pregunta o comentario adicional?"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="mTerminos" required>
+                                            <label class="form-check-label" for="mTerminos"
+                                                style="font-size:.85rem; color:#555;">
+                                                Acepto los <a href="#"
+                                                    style="color:var(--azul); font-weight:600;">Términos y
+                                                    Condiciones</a> y la <a href="#"
+                                                    style="color:var(--azul); font-weight:600;">Política de
+                                                    Privacidad</a> de ILAC.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn-naranja"
+                                            style="padding:.85rem 2rem; border:none; cursor:pointer; font-size:1.05rem; width:100%; font-weight:700;">
+                                            <i class="bi bi-check-circle-fill me-2"></i>Enviar solicitud de matrícula
+                                        </button>
+                                    </div>
+                                    <div id="msgMatricula" style="display:none;" class="col-12"></div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="row g-3 mt-2">
+                            <div class="col-sm-4 text-center">
+                                <i class="bi bi-shield-check"
+                                    style="font-size:2rem; color:var(--azul); display:block; margin-bottom:.5rem;"></i>
+                                <strong
+                                    style="font-family:'Sora',sans-serif; font-size:.9rem; color:var(--azul-oscuro);">Datos
+                                    seguros</strong>
+                                <p style="font-size:.8rem; color:#666; margin:0;">Tu información está protegida y no se
+                                    comparte con terceros.</p>
+                            </div>
+                            <div class="col-sm-4 text-center">
+                                <i class="bi bi-headset"
+                                    style="font-size:2rem; color:var(--azul); display:block; margin-bottom:.5rem;"></i>
+                                <strong
+                                    style="font-family:'Sora',sans-serif; font-size:.9rem; color:var(--azul-oscuro);">Respuesta
+                                    en 24h</strong>
+                                <p style="font-size:.8rem; color:#666; margin:0;">Nuestro equipo te contactará a la
+                                    brevedad posible.</p>
+                            </div>
+                            <div class="col-sm-4 text-center">
+                                <i class="bi bi-currency-dollar"
+                                    style="font-size:2rem; color:var(--azul); display:block; margin-bottom:.5rem;"></i>
+                                <strong
+                                    style="font-family:'Sora',sans-serif; font-size:.9rem; color:var(--azul-oscuro);">Facilidades
+                                    de pago</strong>
+                                <p style="font-size:.8rem; color:#666; margin:0;">Múltiples opciones de pago y
+                                    financiamiento disponibles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer role="contentinfo" class="footer-ilac">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="footer-logo mb-2"><span>&#9673; ILAC</span></div>
+                    <p class="footer-text">
+                        Instituto Latinoamericano de Computación. Educación tecnológica virtual de calidad para toda
+                        Latinoamérica desde Costa Rica.
+                    </p>
+
+                    <div class="footer-social mt-3" aria-label="Redes sociales de ILAC">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <h5>Institución</h5>
+                    <a href="nosotros.html">Conocé ILAC</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <h5>Programas</h5>
+                    <a href="carreras.html">Carreras técnicas</a>
+                    <a href="cursos.html">Cursos libres</a>
+                    <a href="cursos.html">Especializados</a>
+                    <a href="cursos.html">Empresariales</a>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Contáctanos</h5>
+                    <p class="footer-contact"><i class="bi bi-geo-alt me-2"></i>San José, Costa Rica</p>
+                    <p class="footer-contact"><i class="bi bi-telephone me-2"></i>+506 4052-7777</p>
+                    <p class="footer-contact"><i class="bi bi-whatsapp me-2"></i>+506 8477-1777</p>
+                    <p class="footer-contact"><i class="bi bi-envelope me-2"></i>info@ilacvirtual.com</p>
+
+                    <a href="matricula.html" class="btn-naranja footer-btn">
+                        <i class="bi bi-pencil-square me-1"></i>Matricular ahora
+                    </a>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p>
+                    © 2025 ILAC - Instituto Latinoamericano de Computación. Todos los derechos reservados.
+                    | <a href="anuncios.html">Anuncios</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
